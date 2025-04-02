@@ -1,0 +1,55 @@
+name: advanced-solar-detection
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python Core
+  - python=3.9
+
+  # Data Science and Machine Learning
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+
+  # Deep Learning
+  - tensorflow
+  - keras
+  - cudatoolkit  # GPU support
+  - cudnn  # GPU support
+
+  # Geospatial Libraries
+  - geopandas
+  - rasterio
+  - shapely
+  - pyproj
+
+  # Image Processing
+  - opencv
+  - pillow
+  - scikit-image
+
+  # Web and Visualization
+  - streamlit
+  - folium
+  - streamlit-folium
+
+  # Satellite and Geospatial API Support
+  - requests
+  - geopy
+
+  # Additional Utilities
+  - jupyter
+  - ipykernel
+
+  # Pip-installed packages
+  - pip
+  - pip:
+    # Additional libraries not in conda
+    - earthengine-api  # Google Earth Engine
+    - sentinelhub  # Sentinel Hub API
+    - planetary-computer  # Microsoft Planetary Computer
+    - streamlit-extras
+    - plotly
